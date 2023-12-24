@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+	<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+						 validUntil="2024-01-17T08:35:15Z"
+						 cacheDuration="PT604800S"
+						 entityID="https://10.38.56.39:9440/api/iam/authn">
+		<md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+			<md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+			<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+										 Location="https://10.38.56.39:9440/api/iam/authn/callback"
+										 index="1" />
+		</md:SPSSODescriptor>
+		<md:ContactPerson contactType="technical">
+			<md:GivenName>nutanix-support</md:GivenName>
+			<md:EmailAddress>support@nutanix.com</md:EmailAddress>
+		</md:ContactPerson>
+	</md:EntityDescriptor>
